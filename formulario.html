@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagen\icono.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="reservah1">Reserva tu visita a salento</h1>
+            <nav class="nav1">
+                <a class="a1" href="index.html">Inicio</a>
+                <a class="a1" href="">Reserva</a>
+                <a class="a1" href="contacto.html">Contacto</a>
+            </nav>
+            <img class="reservaimg" src="imagen\Captura.JPG" alt="">
+        </section>
+        <section>
+            <div class="venta1">
+                <h2 class="ventah2">Valle de cocora</h2>
+                <img class="ventaimg" src="imagen\cocora.jpg" alt="">
+                <p class="ventap">En la Reserva Natural Valle de Cocora se encuentra el hogar del árbol nacional de Colombia, la palma de cera del Quindío, especie nativa de los valles del bosque andino colombiano; el Valle de Cocora es este paraíso natural único.</p>
+                <button class="boton1">Comprar</button><p class="ventap1">Precio: 20000$</p>
+            </div>
+            <div class="venta2">
+                <h2 class="ventah2">Mirador Salento</h2>
+                <img class="ventaimg" src="imagen\mirador.jpg" alt="">
+                <p class="ventap">Desde el mirador alto de la cruz podremos contemplar todo el pueblo, el valle de Cócora y el parque de Los Nevados.</p><br><br>
+                <button class="boton1">Comprar</button><p class="ventap1">Precio: 10000$</p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+    </main>
+    <form class="formulario">
+        <section class="form1">
+            <p>Identificaion</p>
+            <select>
+                <optgroup label="Tipo de identificaion">
+                    <option value="cedula">Cedula</option>
+                    <option value="targetaI">TI</option>
+                    <option value="targetaE">TE</option>
+                </optgroup>
+            </select><br><br>
+            <label for="date">Fecha de viaje</label>
+            <input type="date" name="date" required><br><br>
+            <p>Motivo de viaje</p>
+            <div>
+                <input type="radio" name="conect" id="internet">
+                <label for="internet">Visita familiar</label>
+                <input type="radio" name="conect" id="whastsapp">
+                <label for="whastsapp">Turismo</label>
+                <input type="radio" name="conect" id="celular">
+                <label for="celular">No sabe</label>
+            </div><br>
+            <p>Cantidad de personas</p>
+            <input type="number" placeholder="Ninguna">
+        </section>
+        <section class="form">
+            <h2 class="datos">Datos personales</h2><br><br>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre"><br><br>
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" maxlength="25" minlength="8" required><br><br>
+            <label for="email">Correo electronico</label><br>
+            <input type="email" id="email" required><br><br>
+        </section>
+            <label class="palabras" for="mensaje">Sugerencias:</label>
+            <textarea id="mensaje" cols="50" rows="3"></textarea><br><br>
+            <input class="btn2" type="submit" value="enviar"><br>
+            <input class="btn1" type="reset" value="Borrar"><br>
+    </form>
+</body>
+</html>
